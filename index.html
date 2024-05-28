@@ -1,0 +1,340 @@
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+<!doctype html>
+
+<html lang="en">
+    <head> 
+        <title>Super Uncle</title>
+        <link rel="icon" type="image/x-icon" href ="images/favicon.png">
+        <meta name="robots" content="noindex,nofollow">
+        <link href="style.css" rel="stylesheet">
+        <link href="corestyle.css" rel="stylesheet">
+    </head>
+
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <!--Logo is turned white in the css with a filter on dark mode-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="images/super_uncle_logo.jpg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                        <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link">
+                                Services
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Availability</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Super Nerd</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Social Media
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Testimonials
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+            <div class="cs-contact-group">
+                <a href="" class="cs-phone">
+                    <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="logo" width="34" height="34" aria-hidden="true" decoding="async">
+                    9467 1751
+                </a>
+                <a href="" class ="cs-login">
+                    <img class="cs-login-icon" src="images/login_icon.png" alt="logo" width="24" height="24" aria-hidden="true" decoding="async">
+                    Log In
+                </a>
+            </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+    <!-- <biody>
+        <div class="slideshow_container">
+            <div class="slide_fade">
+                <div class="text_number">1/3</div>
+                <img src="images/super_uncle_img.jpg" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+            The dots/circles -->
+        <!-- <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div> -->
+
+
+    <!-- </biody> --> 
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+    
+                        
+    <section id="hero-1619">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h1 class="cs-title">Every Child Needs a Super Uncle To Look Up To</h1>
+                <a href="" class="cs-button-solid">Book Now</a>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="images/check-circle.svg" alt="icon" width="48" height="48">
+                    <h3 class="cs-h3">High Satisfaction Rate</h3>
+                    <p class="cs-item-text">
+                        Super Uncle has continued to provide services of substantial quality with both parents and children being left satisfied with the services provided. 
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/speedometer.svg" alt="icon" width="48" height="48">
+                    <h3 class="cs-h3">Extensive Experience</h3>
+                    <p class="cs-item-text">
+                        Having looked after more than 500 children for over 100 families, Super Uncle knows exactly what to do in order to deliver the most optimal service. 
+                    </p>
+                </li>
+                <a href="" class="cs-button-6" aria-label="read more about us">
+                    Read Testimonials
+                </a>
+            </ul>
+            
+        </div>
+
+        <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="images/child_with_doll.png">
+            <source media="(min-width: 601px)" srcset="images/child_with_doll.png">
+            <img decoding="async" src="images/child_with_doll.png" alt="meeting" width="2250" height="1500" aria-hidden="true">
+        </picture>
+    </section>
+                                
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="sbsr-1363">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="images/Damian-Lissington.jpeg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="images/Damian-Lissington.jpeg">
+                <img loading="lazy" decoding="async" src="images/Damian-Lissington.jpeg" alt="people" width="605" height="690">
+            </picture>
+            <div class="cs-box">
+                <!-- <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="people" width="60" height="60"> -->
+                <span class="cs-desc">
+                    Damian Lissington
+                </span>
+            </div>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Introducing</span>
+            <h2 class="cs-title">Super Uncle</h2>
+            <p class="cs-text">
+                Would you trust a man to look after your little ones? 
+                If he's Perth's Super Uncle you can!
+                Perth's parents rave about the child-minding qualities of Damian Lissington, aka Super Uncle!
+            </p>
+            <p class="cs-text">
+                Need a day off? Need a night out? Need time for uni or fun? I can be your Super Uncle for the day (or night!).
+            </p>
+            <p class="cs-text">
+                I also take on the persona of Super Nerd to provide computer-related issues that you may face!
+            </p>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="images/police_clearance_icon.png" alt="icon" width="32" height="32">
+                        National Police Clearance
+                    </h3>
+                    <p class="cs-item-text">
+                        Earning your trust is utmost of importance 
+                    </p>                   
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async" src="images/wwcc_icon.png" alt="icon" width="32" height="32">
+                        Working with Children Check
+                    </h3>
+                    <p class="cs-item-text">
+                        To ensure that your child is in good hands
+                    </p>
+                </li>
+                
+            </ul>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="images/black-check.svg" alt="checkmark" width="24" height="24">
+                    Before and after school care (Pickup and drop off)
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="images/black-check.svg" alt="checkmark" width="24" height="24">
+                    Weekdays and weekends. Days and evenings
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="images/black-check.svg" alt="checkmark" width="24" height="24">
+                    Occasional care
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="images/black-check.svg" alt="checkmark" width="24" height="24">
+                    School days, pupil free days and school holidays
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="images/black-check.svg" alt="checkmark" width="24" height="24">
+                    Emergency care
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="images/black-check.svg" alt="checkmark" width="24" height="24">
+                    Overnight and live-in care
+                </li>
+            </ul>
+            <a href="" class="cs-button-solid">Check Availability</a>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+<script src="script.js"></script>
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-1292">
+    <div class="cs-container">      
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="images/super_uncle_logo.jpg" alt="logo" width="185" height="164">
+            </a>
+            <p class="cs-text">
+                Quality childccare at your convenience. 
+            </p>
+            <a href="mailto:info@mail.com" class="cs-link">
+                <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="images/email_icon.png" alt="icon" width="24" height="24">
+                damian@super-nerd.com.au
+            </a>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Services</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Before and After School Care</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Pickup and Drop Offs</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Emergency Care</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Super Nerd</a>
+            </li>
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">About</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Character Reference</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Testimonials</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Video Testimonials</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Handbook</a>
+            </li>
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Facebook</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Instagram</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Twitter</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">LinkedIn</a>
+            </li>
+
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Help</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">FAQ</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Contact Me</a>
+            </li>
+        </ul>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-copyright"> Damian Lissington  
+ 
+            <a class="cs-copyright-link" href=""> Phone: 9467 1751 </a>
+            <a class="cs-copyright-link" href=""> Mobile: 0448 663 737 </a>
+        </span>
+        <a href="" class="cs-copyright-link">Terms of Service</a>
+        <a href="" class="cs-copyright-link">Privacy Policy</a>
+    </div>
+    <!--Floating Cirlces-->
+    <div class="cs-floater" aria-hidden="true"></div>
+</footer>
+                                
+
+
+</html>
+
+
+                                
